@@ -87,7 +87,6 @@ class Boot {
     LiftRules.statelessDispatch.append(JsonHelper)
 
     // logger settings
-    net.liftweb.common.Logger.setup = Full(Log4j.withFile(this.getClass.getClassLoader.getResource("log4j.xml")))
     Logger.setDefaultFormatter(CustomLogFormatter)
     Logger.scanLogLevels
   }
